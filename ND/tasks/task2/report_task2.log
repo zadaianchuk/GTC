@@ -1,0 +1,521 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.21)  17 NOV 2016 14:06
+entering extended mode
+**report_task2.tex
+(report_task2.tex
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+\c@ContinuedFloat=\count89
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count90
+\sf@farskip=\skip43
+\sf@captopadj=\dimen112
+\sf@capskip=\skip44
+\sf@nearskip=\skip45
+\c@subfigure=\count91
+\c@subfigure@save=\count92
+\c@lofdepth=\count93
+\c@subtable=\count94
+\c@subtable@save=\count95
+\c@lotdepth=\count96
+\sf@top=\skip46
+\sf@bottom=\skip47
+) (report_task2.aux
+
+LaTeX Warning: Label `fig:exp1' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count97
+\scratchdimen=\dimen113
+\scratchbox=\box26
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen114
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks16
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 14.
+ [1
+
+{C:/Users/Andew/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Package epstopdf Info: Source file: <images/exp1.eps>
+(epstopdf)                    date: 2016-11-17 14:04:59
+(epstopdf)                    size: 37205 bytes
+(epstopdf)             Output file: <images/exp1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:32
+(epstopdf)                    size: 10601 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp1-eps-converted-t
+o.pdf images/exp1.eps>
+(epstopdf)             \includegraphics on input line 18.
+runsystem(epstopdf --outfile=images/exp1-eps-converted-to.pdf images/exp1.eps).
+..executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:29
+(epstopdf)                    size: 10601 bytes.
+
+<images/exp1-eps-converted-to.pdf, id=7, 492.84125pt x 393.47pt>
+File: images/exp1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp1-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp1-eps-converted-to.pdf used on input line 18
+.
+(pdftex.def)             Requested size: 310.4979pt x 247.90541pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 19.
+Package epstopdf Info: Source file: <images/exp2.eps>
+(epstopdf)                    date: 2016-11-17 14:05:00
+(epstopdf)                    size: 19200 bytes
+(epstopdf)             Output file: <images/exp2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:33
+(epstopdf)                    size: 4119 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp2-eps-converted-t
+o.pdf images/exp2.eps>
+(epstopdf)             \includegraphics on input line 26.
+runsystem(epstopdf --outfile=images/exp2-eps-converted-to.pdf images/exp2.eps).
+..executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:29
+(epstopdf)                    size: 4119 bytes.
+
+<images/exp2-eps-converted-to.pdf, id=8, 492.84125pt x 393.47pt>
+File: images/exp2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp2-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp2-eps-converted-to.pdf used on input line 26
+.
+(pdftex.def)             Requested size: 241.49895pt x 192.80798pt.
+Package epstopdf Info: Source file: <images/exp3.eps>
+(epstopdf)                    date: 2016-11-17 14:05:00
+(epstopdf)                    size: 17488 bytes
+(epstopdf)             Output file: <images/exp3-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:33
+(epstopdf)                    size: 3390 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp3-eps-converted-t
+o.pdf images/exp3.eps>
+(epstopdf)             \includegraphics on input line 28.
+runsystem(epstopdf --outfile=images/exp3-eps-converted-to.pdf images/exp3.eps).
+..executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp3-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:30
+(epstopdf)                    size: 3390 bytes.
+
+<images/exp3-eps-converted-to.pdf, id=9, 492.84125pt x 393.47pt>
+File: images/exp3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp3-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp3-eps-converted-to.pdf used on input line 28
+.
+(pdftex.def)             Requested size: 241.49895pt x 192.80798pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <images/exp4.eps>
+(epstopdf)                    date: 2016-11-17 14:05:03
+(epstopdf)                    size: 221597 bytes
+(epstopdf)             Output file: <images/exp4-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:34
+(epstopdf)                    size: 52671 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp4-eps-converted-t
+o.pdf images/exp4.eps>
+(epstopdf)             \includegraphics on input line 36.
+runsystem(epstopdf --outfile=images/exp4-eps-converted-to.pdf images/exp4.eps).
+..executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp4-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:31
+(epstopdf)                    size: 52671 bytes.
+<images/exp4-eps-converted-to.pdf, id=10, 495.8525pt x 393.47pt>
+File: images/exp4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp4-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp4-eps-converted-to.pdf used on input line 36
+.
+(pdftex.def)             Requested size: 241.49895pt x 191.63722pt.
+Package epstopdf Info: Source file: <images/exp5.eps>
+(epstopdf)                    date: 2016-11-17 14:05:06
+(epstopdf)                    size: 221607 bytes
+(epstopdf)             Output file: <images/exp5-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:35
+(epstopdf)                    size: 52606 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp5-eps-converted-t
+o.pdf images/exp5.eps>
+(epstopdf)             \includegraphics on input line 38.
+runsystem(epstopdf --outfile=images/exp5-eps-converted-to.pdf images/exp5.eps).
+..executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp5-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:32
+(epstopdf)                    size: 52606 bytes.
+
+<images/exp5-eps-converted-to.pdf, id=11, 501.875pt x 393.47pt>
+File: images/exp5-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp5-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp5-eps-converted-to.pdf used on input line 38
+.
+(pdftex.def)             Requested size: 241.49895pt x 189.33775pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <images/exp61.eps>
+(epstopdf)                    date: 2016-11-17 14:05:15
+(epstopdf)                    size: 112582 bytes
+(epstopdf)             Output file: <images/exp61-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:36
+(epstopdf)                    size: 35139 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp61-eps-converted-
+to.pdf images/exp61.eps>
+(epstopdf)             \includegraphics on input line 46.
+runsystem(epstopdf --outfile=images/exp61-eps-converted-to.pdf images/exp61.eps
+)...executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp61-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:33
+(epstopdf)                    size: 35139 bytes.
+<images/exp61-eps-converted-to.pdf, id=12, 501.875pt x 393.47pt>
+File: images/exp61-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp61-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp61-eps-converted-to.pdf used on input line 4
+6.
+(pdftex.def)             Requested size: 172.5pt x 135.24297pt.
+Package epstopdf Info: Source file: <images/exp62.eps>
+(epstopdf)                    date: 2016-11-17 14:05:23
+(epstopdf)                    size: 112745 bytes
+(epstopdf)             Output file: <images/exp62-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:37
+(epstopdf)                    size: 35970 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp62-eps-converted-
+to.pdf images/exp62.eps>
+(epstopdf)             \includegraphics on input line 48.
+runsystem(epstopdf --outfile=images/exp62-eps-converted-to.pdf images/exp62.eps
+)...executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp62-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:34
+(epstopdf)                    size: 35970 bytes.
+
+<images/exp62-eps-converted-to.pdf, id=13, 501.875pt x 393.47pt>
+File: images/exp62-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp62-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp62-eps-converted-to.pdf used on input line 4
+8.
+(pdftex.def)             Requested size: 172.5pt x 135.24297pt.
+Package epstopdf Info: Source file: <images/exp63.eps>
+(epstopdf)                    date: 2016-11-17 14:05:32
+(epstopdf)                    size: 112828 bytes
+(epstopdf)             Output file: <images/exp63-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:38
+(epstopdf)                    size: 36555 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp63-eps-converted-
+to.pdf images/exp63.eps>
+(epstopdf)             \includegraphics on input line 50.
+runsystem(epstopdf --outfile=images/exp63-eps-converted-to.pdf images/exp63.eps
+)...executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp63-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:35
+(epstopdf)                    size: 36555 bytes.
+
+<images/exp63-eps-converted-to.pdf, id=14, 501.875pt x 393.47pt>
+File: images/exp63-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp63-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp63-eps-converted-to.pdf used on input line 5
+0.
+(pdftex.def)             Requested size: 172.5pt x 135.24297pt.
+Package epstopdf Info: Source file: <images/exp64.eps>
+(epstopdf)                    date: 2016-11-17 14:05:39
+(epstopdf)                    size: 112204 bytes
+(epstopdf)             Output file: <images/exp64-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:38
+(epstopdf)                    size: 34680 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp64-eps-converted-
+to.pdf images/exp64.eps>
+(epstopdf)             \includegraphics on input line 52.
+runsystem(epstopdf --outfile=images/exp64-eps-converted-to.pdf images/exp64.eps
+)...executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp64-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:36
+(epstopdf)                    size: 34680 bytes.
+
+<images/exp64-eps-converted-to.pdf, id=15, 501.875pt x 393.47pt>
+File: images/exp64-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp64-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp64-eps-converted-to.pdf used on input line 5
+2.
+(pdftex.def)             Requested size: 172.5pt x 135.24297pt.
+Package epstopdf Info: Source file: <images/exp65.eps>
+(epstopdf)                    date: 2016-11-17 14:05:47
+(epstopdf)                    size: 123539 bytes
+(epstopdf)             Output file: <images/exp65-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:39
+(epstopdf)                    size: 30052 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp65-eps-converted-
+to.pdf images/exp65.eps>
+(epstopdf)             \includegraphics on input line 54.
+runsystem(epstopdf --outfile=images/exp65-eps-converted-to.pdf images/exp65.eps
+)...executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp65-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:37
+(epstopdf)                    size: 30052 bytes.
+
+<images/exp65-eps-converted-to.pdf, id=16, 495.8525pt x 393.47pt>
+File: images/exp65-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp65-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp65-eps-converted-to.pdf used on input line 5
+4.
+(pdftex.def)             Requested size: 172.5pt x 136.88202pt.
+Package epstopdf Info: Source file: <images/exp66.eps>
+(epstopdf)                    date: 2016-11-17 14:05:55
+(epstopdf)                    size: 190450 bytes
+(epstopdf)             Output file: <images/exp66-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:40
+(epstopdf)                    size: 42705 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp66-eps-converted-
+to.pdf images/exp66.eps>
+(epstopdf)             \includegraphics on input line 56.
+runsystem(epstopdf --outfile=images/exp66-eps-converted-to.pdf images/exp66.eps
+)...executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp66-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:38
+(epstopdf)                    size: 42705 bytes.
+
+<images/exp66-eps-converted-to.pdf, id=17, 490.83376pt x 393.47pt>
+File: images/exp66-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp66-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp66-eps-converted-to.pdf used on input line 5
+6.
+(pdftex.def)             Requested size: 172.5pt x 138.28091pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <images/exp7.eps>
+(epstopdf)                    date: 2016-11-17 14:05:56
+(epstopdf)                    size: 16694 bytes
+(epstopdf)             Output file: <images/exp7-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-16 22:28:41
+(epstopdf)                    size: 3504 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/exp7-eps-converted-t
+o.pdf images/exp7.eps>
+(epstopdf)             \includegraphics on input line 62.
+runsystem(epstopdf --outfile=images/exp7-eps-converted-to.pdf images/exp7.eps).
+..executed (allowed).
+
+Package epstopdf Info: Result file: <images/exp7-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 14:06:39
+(epstopdf)                    size: 3509 bytes.
+<images/exp7-eps-converted-to.pdf, id=18, 486.81876pt x 393.47pt>
+File: images/exp7-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/exp7-eps-converted-to.pdf>
+Package pdftex.def Info: images/exp7-eps-converted-to.pdf used on input line 62
+.
+(pdftex.def)             Requested size: 310.4979pt x 250.96138pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (17.55408pt too wide) in paragraph at lines 68--72
+[]\OT1/cmr/m/n/10 The pro-gram was writ-ten in OOP stile with two classes: \OT1
+/cmtt/m/n/10 Neuron \OT1/cmr/m/n/10 and \OT1/cmtt/m/n/10 Experiment\OT1/cmr/m/n
+/10 .
+ []
+
+
+Overfull \hbox (2.61485pt too wide) in paragraph at lines 68--72
+\OT1/cmr/m/n/10 Class \OT1/cmtt/m/n/10 Neuron \OT1/cmr/m/n/10 con-sists all the
+ pa-ram-e-ters of neu-ron such as $\OML/cmm/m/it/10 r[]; c[]; r[]; l; d; R[]; C
+[]$
+ []
+
+[1 <./images/exp1-eps-converted-to.pdf>] [2 <./images/exp2-eps-converted-to.pdf
+> <./images/exp3-eps-converted-to.pdf>] [3 <./images/exp4-eps-converted-to.pdf>
+ <./images/exp5-eps-converted-to.pdf>] [4 <./images/exp61-eps-converted-to.pdf>
+ <./images/exp62-eps-converted-to.pdf> <./images/exp63-eps-converted-to.pdf> <.
+/images/exp64-eps-converted-to.pdf> <./images/exp65-eps-converted-to.pdf> <./im
+ages/exp66-eps-converted-to.pdf>] [5 <./images/exp7-eps-converted-to.pdf>]
+(report_task2.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2766 strings out of 493673
+ 44589 string characters out of 3143960
+ 109165 words of memory out of 3000000
+ 6102 multiletter control sequences out of 15000+200000
+ 6843 words of font info for 25 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 42i,10n,47p,379b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on report_task2.pdf (6 pages, 453222 bytes).
+PDF statistics:
+ 117 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+

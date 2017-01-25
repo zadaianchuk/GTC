@@ -1,0 +1,72 @@
+\documentclass[]{report}
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\graphicspath{ {images/} }
+\usepackage{caption} 
+\usepackage{subfig}
+% Title Page
+\title{Task 2. Simulation of single compartment model}
+\author{Andrii Zadaianchuk}
+
+
+\begin{document}
+\maketitle
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{exp1.eps}
+	\caption*{3.1 The voltage $V(t)$ output for step input $I_e(t)$}
+	\label{fig:exp1}
+\end{figure}
+3.1 The simulation was done with the help of numerical method by e.g. backward Euler method.
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[$\delta t$=0.001]{\includegraphics[width=0.7\textwidth]{exp2.eps}}
+	\hfill
+	\subfloat[$\delta t$=0.01]{\includegraphics[width=0.7\textwidth]{exp3.eps}}
+	\caption*{3.2 Changing of step $\delta t$}
+\end{figure}
+
+3.2 The simulation becomes less accurate. For example, we can see that in time $\tau=10 ms$ when $V(\tau)=V_{max}-V_{max}/e \approx -51 mV $ our approximation in a) and b) is only $-45$ and $-40 mV$, respectively.    The backward Euler method works when $\delta t$ is small enough. 
+ 
+\begin{figure}[h!]
+	\centering
+	\subfloat[$c_m=0.1 Fm^{-2}$]{\includegraphics[width=0.7\textwidth]{exp4.eps}}
+	\hfill
+	\subfloat[$r_m=10\Omega m^2$]{\includegraphics[width=0.7\textwidth]{exp5.eps}}
+	\caption*{3.3 Changing of $c_m$ and $r_m$}
+	
+\end{figure}
+3.3 We clearly see that when we change capacitance only time scale is changing, but when we change resistance, time scale and voltage scale is changing. I suppose that because of this linear relation between voltage and resistance, it is much more important to regulate scale of changes in voltage via right resistance (for example amount of open channels).  
+
+\begin{figure}[h]
+	\centering
+	\subfloat[$f_1=0.5 Hz$]{\includegraphics[width=0.5\textwidth]{exp61.eps}}
+	\hfill
+	\subfloat[$f_2=1 Hz$]{\includegraphics[width=0.5\textwidth]{exp62.eps}}
+	\hfill
+	\subfloat[$f_3=2 Hz$]{\includegraphics[width=0.5\textwidth]{exp63.eps}}
+	\hfill
+	\subfloat[$f_4=8 Hz$]{\includegraphics[width=0.5\textwidth]{exp64.eps}}
+	\hfill
+	\subfloat[$f_5=100 Hz$]{\includegraphics[width=0.5\textwidth]{exp65.eps}}
+	\hfill
+	\subfloat[$f_6=1000 Hz$]{\includegraphics[width=0.5\textwidth]{exp66.eps}}
+	\caption*{3.4 Voltage $V(t)$ output for sinusoidal input signal}
+   	
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{exp7.eps}
+	\caption*{3.4 Bode diagram}
+	\label{fig:exp1}
+\end{figure}
+3.4 The amplitude of high frequency is smaller that amplitude of low frequencies. In the Bode diagram we see the same. It is because the capacitor in our chain works as low-pass filter.
+
+The program was written in OOP stile with two classes: \texttt{Neuron} and \texttt{Experiment}. 
+Class \texttt{Neuron} consists all the parameters of neuron such as $r_m, c_m, r_a, l, d, R_m, C_m$
+Another class \texttt{Experiment} consists all parameters of experiment such as type and parameters of the current signal, $E_m$, start time and end time and step $\Delta t$. It also contains main method \texttt{voltage} which compute voltage using numerical vector.
+functions \texttt{Iestep} and \texttt{Iesin} are the functions that find $I_e(t)$. Any different function can be added (add one more types in \texttt{Experement.currenttype})  
+\end{document}         

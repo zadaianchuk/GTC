@@ -1,0 +1,58 @@
+\documentclass[]{report}
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\graphicspath{ {./images/} }
+\usepackage{caption} 
+\usepackage{subfig}
+% Title Page
+\title{Task 3. Simulation of two compartment model}
+\author{Andrii Zadaianchuk}
+
+
+\begin{document}
+\maketitle
+The computations in Exercise 1 and Exercise 2 have done in \texttt{main\_Calculation\_Ex1\_Ex2.m}
+The new class \texttt{Compartment} is based on previous one \texttt{Neuron}, new properties of compartment such as $R_{\infty}, \lambda, L, R_{in}$ were added. 
+
+The same class with combination with class \texttt{Experiment} were used to simulate voltage response on current signal. The main method that calculates voltage in 2 compartments is \texttt{Compartment.Voltage2Comp}
+The simulation is in \texttt{main\_Simulation.m}.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\textwidth]{exp1_1.eps}
+	\caption*{3.1 The voltage $V_1(t)$ and $V_2(t)$  output for two-step input $I_e(t)$}
+	\label{fig:exp1}
+\end{figure}
+
+3.1 The simulation was done with the help of numerical method by e.g. backward Euler method.
+\begin{figure}[h!]
+	\centering
+	\subfloat[$R_a=7M\Omega$]{\includegraphics[width=0.7\textwidth]{exp1_1.eps}}
+	\hfill
+	\subfloat[$R_a=265M\Omega$]{\includegraphics[width=0.7\textwidth]{exp1_2.eps}}
+	\hfill
+	\subfloat[$R_a=30G\Omega$]{\includegraphics[width=0.7\textwidth]{exp1_3.eps}}
+	\caption*{3.2 Different axial resistance $R_a$}
+\end{figure}
+
+3.2 The simulation was done with the help of numerical method by e.g. backward Euler method.
+We can see that with increase of $R_a$ first compartment voltage becomes bigger, whereas voltage in second compartment is smaller. It means that there is signal attenuation due to axial resistance. Therefore, it is important to have opportunity to active signal propagation and also to have good electrical characteristics (such as small axial resistance) to make passive propagation more effective. 
+    \begin{figure}[h!]
+    	\centering
+    	\subfloat[First compartment]{\includegraphics[width=0.7\textwidth]{exp2_V_1.eps}}
+    	\hfill
+    	\subfloat[Second compartment]{\includegraphics[width=0.7\textwidth]{exp2_V_2.eps}}
+    	\hfill
+    	\caption*{3.3 Bode diagram for  first and second compartment }
+    \end{figure}
+
+
+3.3 Bode diagram shows that second compartment works as second order low-pass filter. The amplitudes are smaller that in first compartment and it decreases with increase of frequencies.
+ 
+Also we can see that in the frequency of 5000 Hz with $\delta t=10^{-4}$ we always sample something near 0 ($10^{-12}$). Therefore we increase our sample frequency,  and put $\delta t=10^({-5}$.
+\begin{figure}[h!]
+	\subfloat[$\delta t =10^{-4}$, $f=5000Hz$]{\includegraphics[width=0.7\textwidth]{exp3_3_V_2_2.eps}}
+	\hfill
+	\caption*{3.5  Error due to sampling}
+\end{figure}
+\end{document}         

@@ -1,0 +1,78 @@
+formattype='epsc';
+filename='images\exp';
+%%  3.1
+%Create two objects with default parameters
+Exper1=Experiment;
+N=Neuron;
+
+%plot figure  
+figure
+h=plot(Exper1.t*1000,Exper1.Voltage(N)*10^(3));
+xlabel('time, ms','FontSize',12)
+ylabel('Voltage, mV','FontSize',12)
+saveas(h,[filename '1'],formattype)
+%%  3.2
+Exper2=Experiment;
+%changing of defualt parametr of experiment  
+Exper2.delta_t=10^(-3);
+figure
+h=plot(Exper2.t*1000,Exper2.Voltage(N)*10^(3));
+xlabel('time, ms','FontSize',12)
+ylabel('Voltage, mV','FontSize',12)
+saveas(h,[filename '2'],formattype)
+
+Exper3=Experiment;
+%changing of defualt parametr of experiment
+Exper3.delta_t=10^(-2);
+figure
+h=plot(Exper3.t*1000,Exper3.Voltage(N)*10^(3));
+xlabel('time, ms','FontSize',12)
+ylabel('Voltage, mV','FontSize',12)
+saveas(h,[filename '3'],formattype)
+
+%%  3.3
+Exper4=Experiment;
+Exper4.t_end=1;
+N2=Neuron;
+%changing of defualt parametr of neuron
+N2.c_m_sp=10^(-1);
+figure
+h=plot(Exper4.t*1000,Exper4.Voltage(N2)*10^(3));
+xlabel('time, ms','FontSize',12)
+ylabel('Voltage, mV','FontSize',12)
+saveas(h,[filename '4'],formattype)
+
+Exper5=Experiment;
+Exper5.t_end=1;
+N3=Neuron;
+%changing of defualt parametr of neuron
+N3.r_m_sp=10;
+figure
+h=plot(Exper5.t*1000,Exper5.Voltage(N3)*10^(3));
+xlabel('time, ms','FontSize',12)
+ylabel('Voltage, mV','FontSize',12)
+saveas(h,[filename '5'],formattype)
+
+%%  3.4
+Exper6=Experiment;
+%changing of defualt type of current 
+Exper6.current_type='sin';
+Exper6.I_0=10^(-10)
+
+Exper6.t_end=3;
+fr=[0.5 1 2 8 100 1000];
+for i=1:length(fr)
+    
+Exper6.fr=fr(i);
+volt=Exper6.Voltage(N);
+% look for amplitude in converged state
+ampl(i)=max(volt(1000:end));
+
+end
+
+figure
+%Bode diagram
+h=scatter(log(fr),log(ampl*10^(3)));
+xlabel('log frequency, log(Hz)','FontSize',12)
+ylabel('log Amplitude, log(mV)','FontSize',12)
+saveas(h,[filename '7'],formattype)
