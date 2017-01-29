@@ -39,7 +39,7 @@ class NaiveBayesModel(Model):
         pi=self.params[1]
         return (np.apply_along_axis(lambda x: self.predict(x),axis=1,arr=X)==y).sum()/y.shape[0]
     
-class NaiveBayes2Model(Model):
+class MyNaiveBayesModel(Model):
     def load_data(self):
         self.train_data=np.genfromtxt('./data/train.csv', delimiter=',')
         self.train_labels=np.genfromtxt('./data/train_labels.txt', delimiter=',')
