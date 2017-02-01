@@ -11746,6 +11746,69 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">timedelta</span>
+
+<span class="k">def</span> <span class="nf">insert_video</span><span class="p">(</span><span class="n">video_id</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+    <span class="c1">#TO DO: use link &quot;https://www.youtube.com/watch?t=19&amp;v=WwoTzvOkEJQ&quot; to get the id</span>
+    <span class="n">start_seconds</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">start</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">minutes</span><span class="o">=</span><span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">seconds</span><span class="o">=</span><span class="n">start</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">())</span>
+    <span class="n">end_seconds</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">end</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">minutes</span><span class="o">=</span><span class="n">end</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">seconds</span><span class="o">=</span><span class="n">end</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">YouTubeVideo</span><span class="p">(</span><span class="n">video_id</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span><span class="n">start</span><span class="o">=</span><span class="n">start_seconds</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="n">end_seconds</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
+<span class="s1">code_show=true; </span>
+<span class="s1">function code_toggle() {</span>
+<span class="s1"> if (code_show){</span>
+<span class="s1"> $(&#39;div.input&#39;).hide();</span>
+<span class="s1"> } else {</span>
+<span class="s1"> $(&#39;div.input&#39;).show();</span>
+<span class="s1"> }</span>
+<span class="s1"> code_show = !code_show</span>
+<span class="s1">} </span>
+<span class="s1">$( document ).ready(code_toggle);</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Click here to toggle on/off the raw code.&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<script>
+code_show=true; 
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+</script>
+<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -11775,26 +11838,31 @@ div#notebook {
 <li><a href="#l3p3">Part 3. Metabotropic Glu-R</a></li>
 </ul>
 </li>
+<li><p><a href="#l4">Lecture 4. Neurotransmitter Transporters</a></p>
+<ul>
+<li><a href="#l4p1">Part 1. Introduction</a></li>
+<li><a href="#l4p2">Part 2. NT (re)-uptake</a></li>
+<li><a href="#l4p3">Part 3. NT release by “reversed uptake” </a></li>
+<li><a href="#l4p4">Part 4. Clinical relevance </a></li>
 </ul>
-<!-- * [Lecture 4](#l4)
-    * [Part 1. Introduction](#l4p1)
-    * [Part 2.  Quantum release](#l4p2)
-    * [Part 3. Culcium in NT ](#l4p3)
-    * [Part 4. Molecular mechanism of NT. ](#l4p4)
-* [Lecture 5](#l5)
-    * [Part 1. How NT cause EPSP](#l5p1)
-    * [Part 2. Molecular mechanism](#l5p2)
-    * [Part 3. GABA and Glutamate receptors ](#l5p3)
-    * [Part 4. Electrical synapse](#l5p4)
-
-* [Lecture 6](#l6)
+</li>
+<li><p><a href="#l5">Lecture 5.  Directional transport in neurons</a></p>
+<ul>
+<li><a href="#l5p1">Part 1. Introduction</a></li>
+<li><a href="#l5p2">Part 2. Cytoskeletal elements</a></li>
+<li><a href="#l5p3">Part 3. Molecular motors</a></li>
+<li><a href="#l5p4">Part 4. Examples</a></li>
+</ul>
+</li>
+</ul>
+<!--* [Lecture 6](#l6)
     * [Part 1. Introduction](#l6p1)
     * [Part 2.  Long term synaptic plasticity](#l6p2)
     * [Part 3. Sort term synaptic plasticity ](#l6p3)
 
 * [Lecture 7](#l7)
 
-    * [Part 1. Unit recording ](#l7p1)
+    * [Part 1.](#l7p1)
     * [Part 2.  Multiunit recording](#l7p2)
     * [Part 3. Local field potential](#l7p3)
     * [Part 4. Microstimulation](#l7p4)
@@ -11814,7 +11882,7 @@ div#notebook {
 <ul>
 <li><strong>Ion-channel-linked receptors</strong></li>
 <li><strong>G-protein-linked receptors</strong> </li>
-<li>Enzyme-linked receptors (signal molecule activate enzyme)</li>
+<li>Enzyme-linked receptors (signal molecule activates enzyme)</li>
 </ul>
 
 </div>
@@ -11858,8 +11926,8 @@ Example: ionotropic nACh-receptor
 </ul>
 <p>Classification (by binding)</p>
 <blockquote><ol>
-<li>Binding site <strong>inside the membrane</strong></li>
-<li>Binding site on the <strong>surface of membrane</strong></li>
+<li>Binding site <strong>inside the membrane</strong> [Examples?]</li>
+<li>Binding site on the <strong>surface of membrane</strong> [Examples?]</li>
 <li>Binding site inside <strong>long N-terminal</strong> (venus flytrap module - <strong>VFTM</strong>)
 <img src="images/l1g5.png" alt=""></li>
 </ol>
@@ -11878,9 +11946,9 @@ Example: ionotropic nACh-receptor
 </blockquote>
 <p>Activation of different processes(<strong>coordinated modulation</strong>):</p>
 <blockquote><ul>
-<li>altered metabolism </li>
-<li>altered gene expression</li>
-<li>altered cell shape and movement </li>
+<li>metabolic enzyme $\rightarrow$ altered metabolism </li>
+<li>gene regulatory protein $\rightarrow$ altered gene expression</li>
+<li>cytoskeletal protein $\rightarrow$ altered cell shape and movement </li>
 </ul>
 <p>Can be interaction between different processes triggered by second messengers (<strong>crosstalk</strong>)</p>
 </blockquote>
@@ -11898,7 +11966,7 @@ Example: ionotropic nACh-receptor
 <blockquote><p>In neurons</p>
 <ul>
 <li><a href="..\neurophisiology\neurophysiology.ipynb#l4p3">neurotransmitter release</a> at the chemical synapse</li>
-<li>gatingb of ion channels ( $Cl^-_{Ca}, K^+_{Ca}, Ca^{2+}_{Ca}$)</li>
+<li>gating of ion channels ( $Cl^-_{Ca}, K^+_{Ca}, Ca^{2+}_{Ca}$)</li>
 <li><a href="#ryanodine">gating of Ryanodin- and IP3-receptors</a> ($Ca^{2+}$-induced $Ca^{2+}$-release)</li>
 <li>activation of various enzymes: $Ca^{2+}$-calmodulin, $Ca^{2+}$-protein kinases</li>
 <li>activation of transcription factors – <strong>gene expression</strong></li>
@@ -11923,17 +11991,17 @@ Example: ionotropic nACh-receptor
 <p><a id='ryanodine'></a>
 Getting in</p>
 <blockquote><ul>
-<li><p>by voltage dependent channels</p>
-<ul>
+<li>by voltage dependent channels <ul>
 <li>L-type: high voltage, slow inactivation, inactivated by $Ca^{2+}$</li>
 <li>P/Q-types: high, slow, yes/no</li>
 <li>N-type: high, fast, yes</li>
 <li>R-type: high, fast, no</li>
-<li>T-type: <strong>low </strong>, very fast, no</li>
-</ul>
-<ul>
-<li>by release from <strong>intracellular stores</strong> into the cytosol.(Ryanodine- und IP3-receptors)
+<li>T-type: <strong>low </strong>, very fast, no
+<a id='ip_3'></a><ul>
+<li>by release from <strong>intracellular stores</strong> into the cytosol.(Ryanodine- und IP3-receptors) 
 <img  src="images/l1g7.png" width=500/></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -11978,8 +12046,8 @@ calsequestrine (SER)</p>
 <p><a id='l2p1'></a></p>
 <h4 id="Part-1.-Ionotropic-GABA-receptors-(GABA$_A$-and-GABA$_C$)">Part 1. Ionotropic GABA-receptors (GABA$_A$ and GABA$_C$)<a class="anchor-link" href="#Part-1.-Ionotropic-GABA-receptors-(GABA$_A$-and-GABA$_C$)">&#182;</a></h4><p>Properties</p>
 <blockquote><ul>
-<li>GABA$_A$- and GABA$_C$-R are anion channels</li>
-<li>they have conductance for Cl- (influx)</li>
+<li>GABA$_A$-R and GABA$_C$-R are anion channels</li>
+<li>they have conductance for $Cl^-$ (influx)</li>
 <li>M2 forms the pore – „selectivity filter“</li>
 <li>M2 has rings of positive charge (Lys+, Arg+)</li>
 <li>the $\beta$-subunit binds GABA ($\alpha$-subunit help a little)</li>
@@ -11988,11 +12056,11 @@ calsequestrine (SER)</p>
 </ul>
 </blockquote>
 <p>Modulation of GABA$_A$-receptors (GABA$_C$ doesn't have such properties )</p>
-<blockquote><p>benzodiazepine binding (only with $\gamma$-subunit and only $\alpha_1$ has high affinity )
+<blockquote><p>benzodiazepine binding (only with $\gamma$-subunit and only $\alpha_1$ has <strong>high</strong> affinity )
 <img  src="images/l2g2.png" width=300/>
 Experiment: Potentiation of GABA$_A$-receptor currents</p>
 <blockquote><ol>
-<li>transfection of Xenopus oocytes with cDNAs of a-, b-, g-subunits</li>
+<li>transfection of Xenopus oocytes with cDNAs of $\alpha$-, $\beta$-, $\gamma$-subunits</li>
 <li>recordings with whole-cell patch-clamp technique</li>
 <li>application of GABA alone</li>
 <li>co-application of GABA + benzodiazepines (diazepam - DZP, FNZM)</li>
@@ -12018,12 +12086,12 @@ So we see <strong>potentiation of IPSP.</strong></li>
 <p><a id='l2p2'></a></p>
 <h4 id="Part-2.-Metabotrophic-GABA-receptors-(GABA$_B$-)">Part 2. Metabotrophic GABA-receptors (GABA$_B$ )<a class="anchor-link" href="#Part-2.-Metabotrophic-GABA-receptors-(GABA$_B$-)">&#182;</a></h4><p>Properties</p>
 <blockquote><ul>
-<li>2 types: GABA$_B$1a-d and GABA$_B$2a-c (only 35% sequence homology)<ul>
+<li>2 types: GABA$_B$1a-d and GABA$_B$2a-c (only 35% sequence homology) <ul>
 <li>B1 / B2 are “co-distributed” in the brain (are even expressed in the same cells)</li>
 <li>expressed in all brain areas </li>
 <li>GABA$_A$-R vs. GABA$_B$-R: 50% / 50%</li>
 <li>in brainstem, thalamus, cerebellum, spinal cord: 90% GABA$_B$-R</li>
-<li>pre-, post- und extra-synaptically located</li>
+<li>located pre-, post- und extra-synaptically</li>
 </ul>
 </li>
 </ul>
@@ -12034,13 +12102,14 @@ So we see <strong>potentiation of IPSP.</strong></li>
 <img  src="images/l2g5.png" width=400/></li>
 </ul>
 </blockquote>
-<p>GABA$_B$-receptor: effector systems</p>
+<p>GABA$_B$-receptor: effector systems 
+<a id='g_i'></a></p>
 <blockquote><ul>
 <li>GABA$_B$-receptor binds i/o-G proteins, that have such effect:
 <img  src="images/l2g7.png" width=600/></li>
 </ul>
 <p>Post-synaptical ($\alpha$-subunit):</p>
-<blockquote><p>Activation of GABA$_B$-R post-synaptically activ. Gi/Go $\alpha$-SU inhibits AC $\rightarrow$ reduction of cAMP-level $\rightarrow$reduction of cAMP-dependent processes $\rightarrow$ reduction of protein kinase A-level (<a href="https://en.wikipedia.org/wiki/Protein_kinase_A">PKA</a>) $\rightarrow$ no PKA – <strong>no phosphorylation</strong></p>
+<blockquote><p>Activation of GABA$_B$-R post-synaptically activ. Gi/Go $\alpha$-SU inhibits AC $\rightarrow$ reduction of <a href="https://en.wikipedia.org/wiki/Cyclic_adenosine_monophosphate">cAMP</a>-level $\rightarrow$reduction of cAMP-dependent processes $\rightarrow$ reduction of protein kinase A-level (<a href="https://en.wikipedia.org/wiki/Protein_kinase_A">PKA</a>) $\rightarrow$ no PKA – <strong>no phosphorylation</strong></p>
 </blockquote>
 <p>Post-synaptical ($\beta \gamma$-subunit):</p>
 <blockquote><p>activ. GABA$_B$-R post-synaptically $\rightarrow$ activ. Gi/Go (separation of $\alpha$-SU + $\beta \gamma$-SU) $\rightarrow \beta \gamma$-SU binds to $K^+$-channel (GirK) $\rightarrow$ gating: $K^+$ outflow  $\rightarrow$ <strong>hyperpolarisation</strong></p>
@@ -12101,8 +12170,8 @@ loops.
 <li>Glu binding and subsequent conformational change causes <strong>tension</strong> between dimers</li>
 <li><strong>affinity</strong> of the dimer-interfaces determines the <strong>inactivation</strong> (desensitization):
 <img  src="images/l3g4.png" width=700/></li>
-<li>high affinity -&gt; fast inactivation -&gt; small current (iGlu-R <strong>flop</strong>)</li>
-<li>weak affinity -&gt; slow inactivation -&gt; large current (iGlu-R <strong>flip</strong>)</li>
+<li>high affinity $\rightarrow$ fast inactivation $\rightarrow$ small current (iGlu-R <strong>flop</strong>)</li>
+<li>weak affinity $\rightarrow$ slow inactivation $\rightarrow$ large current (iGlu-R <strong>flip</strong>)</li>
 </ul>
 </blockquote>
 
@@ -12123,9 +12192,9 @@ loops.
 </blockquote>
 <p>Other properties:</p>
 <blockquote><ul>
-<li>NMDA-Rs are cation channels with <strong>high Ca2+-conductance</strong><ul>
+<li>NMDA-Rs are cation channels with <strong>high $Ca^{2+}$-conductance</strong><ul>
 <li>play a major role in „synaptic plasticity“</li>
-<li>play a role in „glutamate-toxicity“ – [Ca2+] (when glutomate stay in extracellular space -&gt; too many Ca2+)</li>
+<li>play a role in „glutamate-toxicity“ – [$Ca^{2+}$] (when glutomate stay in extracellular space $\rightarrow$ too many $Ca^{2+}$)</li>
 </ul>
 </li>
 <li>NMDA-Rs are „ligand gated“ and <strong>„voltage gated“</strong><ul>
@@ -12148,7 +12217,7 @@ Useful table for such experiments
 <li>they consist of NR1 -+ NR2-subunits (type of NR2 is important for functions)
 <img  src="images/l3g5.png" width=500/></li>
 <li>NR1-NR3B-heteromers form cation channels which are gated by glycine alone.
-(excitatory glycine receptor, no Ca2+-conductance, no Mg2+-block, expressed in the
+(excitatory glycine receptor, no $Ca^{2+}$-conductance, no Mg2+-block, expressed in the
 spinal cord )</li>
 </ul>
 </blockquote>
@@ -12165,7 +12234,367 @@ spinal cord )</li>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='l3p3'></a></p>
-<h4 id="Part-3.-Metabotropic-Glu-R">Part 3. Metabotropic Glu-R<a class="anchor-link" href="#Part-3.-Metabotropic-Glu-R">&#182;</a></h4>
+<h3 id="Part-3.-Metabotropic-Glu-R">Part 3. Metabotropic Glu-R<a class="anchor-link" href="#Part-3.-Metabotropic-Glu-R">&#182;</a></h3><h4 id="mGlu-Rs-are-the-most-important-neuromodulators-in-the-brain">mGlu-Rs are the most important neuromodulators in the brain<a class="anchor-link" href="#mGlu-Rs-are-the-most-important-neuromodulators-in-the-brain">&#182;</a></h4><h4 id="mGlu-Rs-are-most-abundant-in-the-brain">mGlu-Rs are most abundant in the brain<a class="anchor-link" href="#mGlu-Rs-are-most-abundant-in-the-brain">&#182;</a></h4><p><img  src="images/l3g9.png" width=700/></p>
+<p>Classification(<strong>3 groups</strong> confirmed):</p>
+<ul>
+<li>sequence homology(Group I: R1, R5; Group II: R2,R3, Group III: R4, R6, R7, R8)</li>
+<li>pharmacologically</li>
+<li>by G-prot. / sec.mess. couplings(Group I: $G_q$; Group II:$G_i$ Group III: $G_i$ (<a href="#g_i">the same</a> as in GABA$_B$))</li>
+</ul>
+<p>Modulation</p>
+<blockquote><p><img  src="images/l3g10.png" width=700/></p>
+</blockquote>
+<p>Group I and $G_q$-protein</p>
+<blockquote><ul>
+<li>activation of <a href="https://en.wikipedia.org/wiki/Phospholipase_C">PLC</a> $\rightarrow$ <a href="#ip_3">IP3</a> $\rightarrow$ $Ca^{2+}$ -release from intracellular stores<ul>
+<li>mGlu-R1: single $Ca^{2+}$-pulses $\rightarrow$ activation of <strong>cation-channels</strong>
+or activation of <strong>$Ca^{2+}$-depend proteins</strong></li>
+<li>mGlu-R5: $Ca^{2+}$-oscillations (2/min) $\rightarrow$ activ. transcription factor $\rightarrow$ <strong>gene expression</strong></li>
+</ul>
+</li>
+<li>activation of PLC $\rightarrow$ <a href="https://en.wikipedia.org/wiki/Diglyceride">DAG</a> $\rightarrow$ activation of PKC $\rightarrow$ phosphorylation of target proteins
+$\rightarrow$ activ. <a href="https://en.wikipedia.org/wiki/Mitogen-activated_protein_kinase">MAP kinase</a> $\rightarrow$ transcription factor $\rightarrow$ <strong>gene expression</strong></li>
+</ul>
+</blockquote>
+<p>mGlu can induce IPSP</p>
+<blockquote><p><img  src="images/l3g11.png" width=700/></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l4' ></a></p>
+<h3 id="Lecture-4.-Neurotransmitter-Transporters">Lecture 4. Neurotransmitter Transporters<a class="anchor-link" href="#Lecture-4.-Neurotransmitter-Transporters">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l4p1' ></a></p>
+<h4 id="Part-1.-Introduction">Part 1. Introduction<a class="anchor-link" href="#Part-1.-Introduction">&#182;</a></h4><p>Cell membrane is a barrier for many molecules</p>
+<blockquote><ul>
+<li>Barrier allows for intra- vs. extracellular
+<strong>concentration differences</strong> $\rightarrow$ resting potential</li>
+<li>Barrier allows for <strong>precisely controlling</strong> what
+goes in-and-out of a cell.</li>
+<li>Up to <strong>30% of all genes code</strong> for transport
+proteins.</li>
+<li>Neurons devote the <strong>majority of their
+metabolic energy</strong> consumption to
+membrane transport mechanisms ($Na^+-K^+$ pumps burn up to 2/3 of the energy of neurons)
+<img  src="images/l4g1.png" width=500/></li>
+</ul>
+</blockquote>
+<p>Passive transport vs Active transport</p>
+<blockquote><p><img  src="images/l4g2.png" width=700/></p>
+</blockquote>
+<p>Active transport</p>
+<blockquote><p>the $Na^+-K^+$ pump actively pumps <strong>$Na^+$-ions out</strong> of the cell and $K^+$-ions into
+the cell – <strong>against their concentration gradients</strong>.
+ <img  src="images/l4g3.png" width=500/></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l4p2' ></a></p>
+<h4 id="Part-2.-Neurotransmitter-(re)-uptake">Part 2. Neurotransmitter (re)-uptake<a class="anchor-link" href="#Part-2.-Neurotransmitter-(re)-uptake">&#182;</a></h4><ul>
+<li><p>Every part of synapse has NT transporter. Vesicles also have( transport against their gradient).
+<img  src="images/l4g5.png" width=500/></p>
+<ul>
+<li>Transporters are <strong>slow</strong> (takes several 10 ms for 1 transport cycle)</li>
+<li>BUT to compensate this:<ul>
+<li>NT transporters are: <strong>expressed abundantly</strong> / in high density</li>
+<li>transporters bind NT with <strong>high affinity</strong></li>
+</ul>
+</li>
+<li>The number of „high affinity binding sites“ (= NT-receptors + NT-transporters)
+is such that NT-molecules from 1 release event is <strong>completely bound</strong></li>
+<li>The NT-transporters are ‚done‘ with a cycle and <strong>ready again</strong> when
+NT-molecules are <strong>unbound from the NT-receptors</strong> (so all molecules turn back in intracellular space of post-, pre-synaptic site or astrocyte )</li>
+<li>So this makes NT short in time. So EPSP is near in time with AP and we have communication</li>
+</ul>
+</li>
+</ul>
+<p>SLC(<strong>s</strong>o<strong>l</strong>ute <strong>c</strong>arrier)
+<img  src="images/l4g6.png" width=700/></p>
+<p>Glutamate-transporter</p>
+<blockquote><p>“Cooperative” binding:</p>
+<ul>
+<li>$3Na^+$, $H^+$, $Glu$ <strong>in</strong> $\rightarrow$ change in conformation $\rightarrow$ $K^+$ <strong>out</strong> $\rightarrow$ change in conformation $\rightarrow$ ... 
+<img  src="images/l4g7.png" width=500/></li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l4p3' ></a></p>
+<h4 id="Part-3.-NT-release-by-&#8220;reversed-uptake&#8221;">Part 3. NT release by &#8220;reversed uptake&#8221;<a class="anchor-link" href="#Part-3.-NT-release-by-&#8220;reversed-uptake&#8221;">&#182;</a></h4><ul>
+<li>Transporter can always work in <strong>different direction</strong> if the <strong>concentrations</strong> changed dramatically (for example not enough energy for <strong>$Na^+-K^+$ pump</strong>) </li>
+</ul>
+<p>Glutamate (pathological conditions)</p>
+<blockquote><p><img  src="images/l4g8.png" width=700/></p>
+</blockquote>
+<p>GABA (negative feedback)</p>
+<blockquote><p><img  src="images/l4g9.png" width=700/></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l4p4' ></a></p>
+<h4 id="Part-4.-Clinical-relevance">Part 4. Clinical relevance<a class="anchor-link" href="#Part-4.-Clinical-relevance">&#182;</a></h4><ul>
+<li>Dopamine-Transporter &amp; Addiction <ul>
+<li>Cocaine block Dopamine(DA) transporter $\rightarrow$ re-uptake of DA is blocked $\rightarrow$ increased concentration of DA $\rightarrow$ "reward" (in NA) $\rightarrow$ the reinforcing effects finally leading to <strong>cocaine addiction</strong></li>
+</ul>
+</li>
+<li>Serotonin-Transporter &amp; Depression<ul>
+<li>several psychiatric and affective / emotional disorders are caused by a malfunctioning <strong>serotonergic</strong> system / SERTs (depression, anxiety disorders, obsessive-compulsive disorders, …)</li>
+<li>treatment with <strong>drugs that block the uptake of 5-HT</strong> $\rightarrow$ increased concentration of 5-HT in the synaptic cleft (for example, Prozac)</li>
+</ul>
+</li>
+<li>GABA-Transporter &amp; Epilepsy<ul>
+<li>GABA-Transporters (GATs) are targets of <strong>anticonvulsive</strong> substances </li>
+<li>epileptic <strong>seizures</strong> can be suppressed by <strong>increasing cortical inhibition</strong></li>
+<li>application of drugs that <strong>prevent the uptake of
+GABA</strong> from the synaptic cleft $\rightarrow$ <strong>increased concentration of GABA</strong> in the synapse $\rightarrow$ increased <strong>inhibition</strong> $\rightarrow$ strong <strong>anti-convulsive effects</strong>(for example, Tiagabine )</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l5' ></a></p>
+<h3 id="Lecture-5.-Directional-Transport-in-Neurons">Lecture 5. Directional Transport in Neurons<a class="anchor-link" href="#Lecture-5.-Directional-Transport-in-Neurons">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l5p1' ></a></p>
+<h4 id="Part-1.-Introduction">Part 1. Introduction<a class="anchor-link" href="#Part-1.-Introduction">&#182;</a></h4><p>Why do neurons need “transport mechanisms” ?</p>
+<ul>
+<li>Neurons are highly polorized.(axons + dendrites)</li>
+<li>Proteins, organelles, (mRNAs) has to travel from soma (where they are produced) to their <strong>specific</strong> locations</li>
+<li>Diffusion is slow -&gt; we need <strong>active</strong> transport</li>
+</ul>
+<p>Axonal <a href="http://medical-dictionary.thefreedictionary.com/arborization">arborization</a> - axons <strong>also</strong> has many branches, and can terminate in different places.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l5p2' ></a></p>
+<h4 id="Part-2.-Cytoskeletal-elements">Part 2. Cytoskeletal elements<a class="anchor-link" href="#Part-2.-Cytoskeletal-elements">&#182;</a></h4><blockquote><p><img  src="images/l5g1.png" width=400/></p>
+</blockquote>
+<p>Microtubules</p>
+<blockquote><ul>
+<li>cytoskeletal elements <ul>
+<li><strong>tracks</strong> for molecular motors proteins</li>
+<li>tick($25 nm$)</li>
+<li>polar because of alternating pattern of $\alpha$- and $\beta$-tubulin(molecular motors can recognize this polarity)</li>
+<li>+end grows much more rapidly then -end
+<img  src="images/l5g2.png" width=600/></li>
+</ul>
+</li>
+<li>Axonal and dendritic
+microtubules differ in
+their <strong>orientation</strong> (+/-) and in
+their <strong>associated <a href="https://en.wikipedia.org/wiki/Microtubule-associated_protein">MAPs</a></strong>(Tau and MAP2)
+<img  src="images/l5g3.png" width=600/></li>
+<li>the growing of new parts of protein depends on concentration of some substances (<a href="https://en.wikipedia.org/wiki/Nerve_growth_factor">Nerve growth factors</a>)
+<img  src="images/l5g4.png" width=600/></li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l5p3' ></a></p>
+<h4 id="Part-3.-Molecular-motors">Part 3. Molecular motors<a class="anchor-link" href="#Part-3.-Molecular-motors">&#182;</a></h4><p>Functions</p>
+<blockquote><ul>
+<li>they power small-scale intracellular movements ([examples???])</li>
+<li>generate the forces responsible for <strong>muscle contraction</strong></li>
+<li>move chromosomes during mitosis(replicated chromosomes are separated into two new nuclei)</li>
+<li>move enzymes along a <strong>DNA</strong> strand during <strong>transcription</strong></li>
+<li><strong>in neurons: move organelles along microtubule tracks</strong></li>
+</ul>
+</blockquote>
+<p>Molecular structure</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">insert_video</span><span class="p">(</span><span class="s1">&#39;9RUHJhskW00&#39;</span><span class="p">,(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">50</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">16</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="600"
+            height="400"
+            src="https://www.youtube.com/embed/9RUHJhskW00?start=290&end=676"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><ul>
+<li>Upon contact with the microtubules, the <strong>motor domain hydrolysis ATP</strong>.</li>
+<li>The released energy induces a conformational<strong> change in the motor head</strong>
+which is then <strong>translated into a movement</strong> along the microtubule.
+<img  src="images/l5g7.png" width=500/></li>
+<li>kinesins moves cargo <strong>towards the +end</strong> (soma -&gt; axon terminal or dendrites)</li>
+<li>dyneins moves cargo <strong>towards the –end</strong> (axon terminal -&gt; soma).
+<img  src="images/l5g6.png" width=400/></li>
+<li>KIF‘s make use of <strong>adaptor protein complexes</strong> for cargo <strong>recognition and binding</strong></li>
+<li>using different APC the same KIF can bing different substances </li>
+<li>direction of transport can be determine by <strong>different MAPs</strong>, and by different <strong>type of KIFs</strong></li>
+</ul>
+</blockquote>
+<p>What? Where? How quickly?</p>
+<blockquote><p><img  src="images/l5g8.png" width=700/>
+To axon terminal (by kinesins toward +end of microtubules)</p>
+<ul>
+<li>vesicles with <strong>NT-enzymes</strong>, peptide pre-coursers,</li>
+<li>vesicles with <strong>NT-receptors</strong>, <strong>ion channels</strong>, <strong>proteins for transmitter-release</strong>, docking molecules</li>
+<li>new <strong>lipids</strong> for membrane-turnover (20-40 cm/day)</li>
+<li><strong>mitochondria</strong> (regenerated, metabolically active) (5-10 cm/day)</li>
+<li>cyto-soluble proteins: <strong>metabolic / glycolysis enzymes</strong> (slow 0.2-0.8 cm/day)</li>
+<li>cytoskeletal / structural proteins: <strong>neurofilaments, microtubules, microfilaments </strong> (slow 0.2-0.8 cm/day) </li>
+</ul>
+<p>To soma (by dyneins toward -end of microtubules)</p>
+<ul>
+<li>removal of misfolded or aggregated proteins (!), membrane patches, cellular debris (20-30 cm/day)</li>
+<li>molecules for <strong>retrograde communication</strong> (NGF), toxins, viruses (HIV, herpes, …) (20-30 cm/day)</li>
+<li>mitochondria (degenerated, metabolically inactive) (5-10 cm/day)</li>
+</ul>
+<p>To dendrites (by dyneins toward -end of microtubules)</p>
+<ul>
+<li>Molecules associated with <strong>postsynaptic</strong> densities</li>
+<li>Neurotransmitter <strong>receptors</strong> (NMDA-R, AMPA-R)</li>
+<li><strong>Ion channels</strong></li>
+<li>RNA granules containing specific mRNAs(&gt; <strong>synaptic plasticity</strong>, LTP)</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l5p4' ></a></p>
+<h4 id="Part-4.--Examples">Part 4.  Examples<a class="anchor-link" href="#Part-4.--Examples">&#182;</a></h4><p>Dendritic transport and synaptic plasticity</p>
+<blockquote><ul>
+<li>KIF17 overexpression in transgeníc mice <strong>enhances</strong> working / episodic <strong>memory</strong> and spatial learning!</li>
+<li>KIF17 &amp; NMDA-R genes are <strong>coregulated</strong></li>
+</ul>
+</blockquote>
+<p>Retrograde communication of growth factors</p>
+<blockquote><ul>
+<li>TyrosinKinase- (trk)-receptors bind to growth factors (e.g. NGF)<ul>
+<li>growth and differentiation of neurons </li>
+<li>promote <strong>survival</strong> (= prevents apoptosis).
+<img  src="images/l5g9.png" width=700/></li>
+</ul>
+</li>
+<li>trk-NGF-complexes are <strong>retrogradely transported</strong> to the soma and induce gene
+expression and, at the same time, <strong>suppresses apoptosis</strong> (‘programmed cell death’)</li>
+</ul>
+</blockquote>
+<p>Retrograde transport of ‘neurotoxins'</p>
+<blockquote><p>Bacteria (Chlostridium tetani) enter an <strong>open wound</strong>:</p>
+<ul>
+<li>they <strong>produce</strong> and secrete <strong>tetanus toxin</strong> = protease</li>
+<li><strong>taken-up</strong> (endocytosed) <strong>by axon terminals</strong> of motoneurons</li>
+<li><strong>transported retrogradely</strong> to the soma (axonal transport !)</li>
+<li>reaches trans-synaptically glycinergic AT (spinal ventral horn)</li>
+<li><strong>blocks glycine release</strong> (effect <a href="..\neurophisiology\neurophysiology.ipynb#l4p4">SNARE-complex</a>) –&gt; no inhibition any more</li>
+<li><strong>tetanic muscle contractions</strong></li>
+</ul>
+</blockquote>
+<p>Axonal transport &amp; neurodegenerative diseases</p>
+<blockquote><ul>
+<li>Motor neuron disorders (<a href="https://en.wikipedia.org/wiki/Amyotrophic_lateral_sclerosis">ALS</a>, motor neuropathy, <a href="https://en.wikipedia.org/wiki/Muscle_atrophy">muscular atrophy</a>) (reduced ATPase activity -&gt; reduced motor activity)</li>
+<li>Alzheimer’s Disease (tangles = phosphorylated, aggregated tau-proteins (MAPs)) 
+<img  src="images/l5g10.png" width=300/></li>
+<li>Huntington’s Disease (motor-cargo-interaction)</li>
+<li>Parkinson’s Disease (mitochondrial damage -&gt; decreased ATP-supply in axons)</li>
+</ul>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -12203,9 +12632,9 @@ mechanisms of $Ca^{2+}$  removal.</li>
 <h4 id="GABA-receptors">GABA receptors<a class="anchor-link" href="#GABA-receptors">&#182;</a></h4><p>GABA$_A$-receptors</p>
 <ul>
 <li>Subunits / subunit composition – function …</li>
-<li>Distinctive features of GABAA-receptors – pharmacology.</li>
-<li>Physiological effect of GABAA activation.</li>
-<li>Potentiation of GABAA-currents.</li>
+<li>Distinctive features of GABA$_A$-receptors – pharmacology.</li>
+<li>Physiological effect of GABA$_A$ activation.</li>
+<li>Potentiation of GABA$_A$-currents.</li>
 </ul>
 <p>GABA$_B$-receptors</p>
 <ul>
@@ -12242,6 +12671,43 @@ mechanisms of $Ca^{2+}$  removal.</li>
 <li>Second messenger coupling Group II and III.</li>
 <li>Second messenger coupling Group I (in detail).</li>
 <li>Occurrence of mGlu-Rs in the CNS.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Neurotransmitter-Transporters">Neurotransmitter Transporters<a class="anchor-link" href="#Neurotransmitter-Transporters">&#182;</a></h4><ul>
+<li>Why do neurons need ‘trans-membrane transport mechanisms’ ?</li>
+<li>Describe the working principles of ‘pumps’ vs. ‘transporters’.</li>
+<li>Where in the neuropil are NT-transporters located?</li>
+<li>Why are NT-transporters crucial for chemical neurotransmission?</li>
+<li>Example of NT-transporters acting as ‘drug’ targets.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Directional-Transport">Directional Transport<a class="anchor-link" href="#Directional-Transport">&#182;</a></h4><p>Mechanisms of directional transport in neurons</p>
+<ul>
+<li>Why do neurons need active, directional transport mechanisms?</li>
+<li>Which of the cytoskeletal elements serves as tracks / ‘polarity’?</li>
+<li>What is a ‘molecular motor’ and how does it work?</li>
+<li>Which ‘types’ of molecular motors are crucial for neuronal
+transport?</li>
+<li>Give examples of fast anterogradely transported cargoes.</li>
+<li>Give examples of fast retrogradely transported cargoes.</li>
+<li>What are typical cargoes of the dendritic transport?</li>
+<li>How do molecular motors recognize / bind their specific cargo?</li>
 </ul>
 
 </div>
@@ -12294,6 +12760,19 @@ They express different things:
  - -->
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
