@@ -11748,13 +11748,15 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">timedelta</span>
 
-<span class="k">def</span> <span class="nf">insert_video</span><span class="p">(</span><span class="n">video_id</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">insert_video</span><span class="p">(</span><span class="n">video_id</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">start</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span><span class="ow">and</span><span class="p">(</span><span class="n">end</span><span class="o">==</span><span class="mi">0</span><span class="p">):</span>
+           <span class="k">return</span> <span class="n">YouTubeVideo</span><span class="p">(</span><span class="n">video_id</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
     <span class="c1">#TO DO: use link &quot;https://www.youtube.com/watch?t=19&amp;v=WwoTzvOkEJQ&quot; to get the id</span>
     <span class="n">start_seconds</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">start</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">minutes</span><span class="o">=</span><span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">seconds</span><span class="o">=</span><span class="n">start</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">())</span>
     <span class="n">end_seconds</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">end</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">minutes</span><span class="o">=</span><span class="n">end</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">seconds</span><span class="o">=</span><span class="n">end</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">())</span>
@@ -11785,7 +11787,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <script>
@@ -11814,6 +11816,44 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Block 1</p>
+<ul>
+<li><a href="#gl1">Lecture 1.  Gene Expression </a><ul>
+<li><a href="#gl1p1">Part 1. Introduction</a></li>
+<li><a href="#gl1p2">Part 2. Transcription</a></li>
+<li><a href="#gl1p3">Part 3. Translation </a></li>
+<li><a href="#gl1p3">Part 4. Regulation </a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="#gl2">Lecture 2. Biological Membranes</a></p>
+<ul>
+<li><a href="#gl2p1">Part 1. Structure</a></li>
+<li><a href="#gl2p2">Part 2. Membrane proteins</a></li>
+<li><a href="#gl2p3">Part 3. Traffic</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="#gl3">Lecture 3. Proteins</a></p>
+<ul>
+<li><a href="#gl3p1">Part 1. Folding </a></li>
+<li><a href="#gl3p2">Part 2. Posttranslational Modifications</a></li>
+<li><a href="#gl3p3">Part 3. Protein Degradation</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Block 2</p>
 <ul>
 <li><a href="#l1">Lecture 1. Neurotransmitter receptors</a><ul>
 <li><a href="#l1p1">Part 1. Ionotropic receptors</a></li>
@@ -11854,13 +11894,16 @@ $( document ).ready(code_toggle);
 <li><a href="#l5p4">Part 4. Examples</a></li>
 </ul>
 </li>
+<li><p><a href="#l6">Lecture 6. Neurotransmitters </a></p>
+<ul>
+<li><a href="#l6p1">Part 1. Low molecular neurotransmitters vs Neuropeptides</a></li>
+<li><a href="#l6p2">Part 2. Co-localization of Classical Transmitters &amp; Neuropeptides</a></li>
+<li><a href="#l6p3">Part 3. Retrograde signaling </a></li>
+<li><a href="#l6p4">Part 4. Neurotransmitter system</a></li>
 </ul>
-<!--* [Lecture 6](#l6)
-    * [Part 1. Introduction](#l6p1)
-    * [Part 2.  Long term synaptic plasticity](#l6p2)
-    * [Part 3. Sort term synaptic plasticity ](#l6p3)
-
-* [Lecture 7](#l7)
+</li>
+</ul>
+<!-- * [Lecture 7. Glia](#l7)
 
     * [Part 1.](#l7p1)
     * [Part 2.  Multiunit recording](#l7p2)
@@ -11869,6 +11912,576 @@ $( document ).ready(code_toggle);
     * [Part 5. Optogenetics](#l7p5)
     * [Part 6. Calcium imaging](#l7p6)
     * [Part 7. Voltage sensitive dyes imaging](#l7p4) -->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Block-1">Block 1<a class="anchor-link" href="#Block-1">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl1'></a></p>
+<h3 id="Lecture-1.-Gene-Expression">Lecture 1. Gene Expression<a class="anchor-link" href="#Lecture-1.-Gene-Expression">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl1p1'></a></p>
+<h4 id="Part-1.-Introduction">Part 1. Introduction<a class="anchor-link" href="#Part-1.-Introduction">&#182;</a></h4><p>DNA is information storage</p>
+<blockquote><ul>
+<li>reading the information (gene expression)</li>
+<li>passing the information on<ul>
+<li>in dividing cells: from cell to cell </li>
+<li>in reproduction: from parents to offspring</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Chemical bounds</p>
+<blockquote><ul>
+<li>covalent bonds: <ul>
+<li><strong>share electrons</strong> between atoms</li>
+<li><strong>strong</strong> bonds</li>
+<li>bonds within <strong>most organic compounds</strong></li>
+</ul>
+</li>
+<li>hydrogen bonds:<ul>
+<li>two atoms <strong>share a hydrogen</strong> atom (H)</li>
+<li>usually <strong>weaker then covalent</strong> bonds</li>
+<li>donor: <strong>N or O</strong> atom with covalently linked H</li>
+<li>acceptor: <strong>O or N</strong></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Nucleotides</p>
+<blockquote><ul>
+<li>carrier of chemical energy (ATP)</li>
+<li>cofactors of enzymes</li>
+<li>specific signaling molecules in cells</li>
+<li>building blocks of nucleic acids ?</li>
+</ul>
+</blockquote>
+<p>DNA</p>
+<blockquote><ul>
+<li>Complementary Base Pairing (A=T, G=C by hydrogen bounds )</li>
+</ul>
+</blockquote>
+<p>Gene</p>
+<blockquote><p>DNA sequence that is <strong>transcribed as a single unit</strong>
+and <strong>encodes one protein (or a closely related set of proteins, see:
+alternative splicing)</strong></p>
+<ul>
+<li><strong>eucaryotic</strong> genes contain exons and introns</li>
+<li><strong>exons</strong> are the <strong>protein coding</strong> regions</li>
+<li><strong>introns</strong> are removed from the mRNA by <strong>splicing</strong></li>
+</ul>
+</blockquote>
+<p>Chromosomes</p>
+<blockquote><p><strong>Eucaryotic</strong> DNA is Packaged into a Set of
+Chromosomes</p>
+<ul>
+<li>Chromatin: the complex of <strong>DNA and protein</strong></li>
+</ul>
+</blockquote>
+<p>Replication</p>
+<blockquote><p>How to copy DNA?</p>
+<ul>
+<li><strong>leading</strong> strand: is synthesized <strong>continously</strong> (3 -&gt; 5 in template)</li>
+<li><strong>lagging</strong> strand: is synthesized <strong>discontinously</strong> by a
+„backstiching“ mechanism ( 5-&gt;3 in template, but reconstraction is in 3-&gt;5 direction )</li>
+<li><strong>Okazaki Fragments</strong>: short DNA fragments synthesized at the
+lagging strand, are later joined together by the enzyme DNA
+ligase</li>
+<li>You need <strong>initiation protein</strong> to open double helix</li>
+<li>replication starts with <strong>RNA primers</strong> </li>
+<li>replication of <strong>chromosomes</strong> bidirectionally in replication bubble
+<img  src="images/dna_l1g1.png" width=400/></li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl1p2'></a></p>
+<h4 id="Part-2.-Transcription">Part 2. Transcription<a class="anchor-link" href="#Part-2.-Transcription">&#182;</a></h4><p>RNA</p>
+<blockquote><p>Types of RNA</p>
+<ul>
+<li>mRNA: messenger RNA is translated to <strong>produce a protein</strong></li>
+<li>tRNA: transfer RNA <strong>adaptors in protein synthesis</strong> (translation)</li>
+<li>rRNA: ribosomal RNA part of the <strong>ribosomes</strong></li>
+<li>miRNA: micro RNA <strong>regulatory functions</strong></li>
+</ul>
+</blockquote>
+<p>RNA POL (binds to the <strong>promoter</strong>)</p>
+<blockquote><p>Types of RNA polymerases</p>
+<ul>
+<li>RNA Pol I makes the large ribosomal RNAs</li>
+<li><strong>RNA Pol II transcribes genes into mRNA</strong></li>
+<li>RNA Pol III makes a variety of small RNAs (5S rRNA, tRNA)
+<img  src="images/dna_l1g2.png" width=400/></li>
+<li>new mRNA is generated in <strong>5‘ to 3‘ direction</strong> </li>
+<li>stops when "see" <strong>secondary structure in RNA</strong> that destabilizes the hold of the RNAPol on the RNA</li>
+</ul>
+</blockquote>
+<p>RNA Splicing</p>
+<blockquote><ul>
+<li>alternative splicing can lead to <strong>protein variants</strong> made from the <strong>same gene</strong>:<ul>
+<li>different exons from one gene can be <strong>joined together</strong></li>
+</ul>
+</li>
+<li>the presence of <strong>numerous introns</strong> in DNA allows genetic
+recombination to <strong>combine the exons of different genes</strong></li>
+<li>important process for evolution of <strong>new proteins from part of existing</strong> ones</li>
+</ul>
+</blockquote>
+<p>Exporting</p>
+<blockquote><p><img  src="images/dna_l1g3.png" width=800/></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl1p3'></a></p>
+<h4 id="Part-3.-Translation">Part 3. Translation<a class="anchor-link" href="#Part-3.-Translation">&#182;</a></h4><p>The Genetic Code</p>
+<blockquote><p>Three nucleotides (a triplet) code
+for one amino acid</p>
+<ul>
+<li>different triplets can code for the
+same amino acid
+e.g. GCA, GCC, GCG, GCU
+code for alanine</li>
+<li><strong>AUG</strong> codes for <strong>methionine</strong> at
+the translation <strong>start</strong> and within
+the protein</li>
+<li><strong>UAA, UAG and UGA</strong> are <strong>stop</strong>
+codons</li>
+<li><strong>frameshift mutation</strong> = 1 or 2 nucleotides <strong>deleted or inserted</strong> (leads to a totally different protein)</li>
+<li>change in one gene can lead to AD</li>
+</ul>
+</blockquote>
+<p>Mechanism</p>
+<blockquote><p><img  src="images/dna_l1g4.png" width=800/></p>
+<p>Initiation:</p>
+<ul>
+<li>initiationsignal is the first <strong>AUG</strong> following the 5’-Cap of the mRNA</li>
+<li>initiator tRNA (<strong>tRNAi</strong>) is coupled to <strong>methionine</strong></li>
+<li><strong>“scanning”</strong>: small ribosomal subunit with tRNAi and eucaryotic initiation factors (eIFs) binds to 5’-Cap and <strong>scans along the mRNA for the start codon</strong>, <strong>then the large ribosomal</strong> subunit is recruited</li>
+</ul>
+<p>Elongation:</p>
+<ul>
+<li>coupling of amino acids to the growing chain is mediated by <strong>elongation factors</strong></li>
+<li>each coupling reaction is associated with <strong>GTP hydrolysis to GDP</strong></li>
+</ul>
+<p>Termination:</p>
+<ul>
+<li>a <strong>release factor binds to the Stop-codon</strong> and terminates translation</li>
+<li>the <strong>protein is released</strong> from the ribosome</li>
+</ul>
+<p>Parallelism</p>
+<ul>
+<li><strong>mRNA is translated by many Ribosomes
+in Parallel</strong></li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl1p4'></a></p>
+<h4 id="Part-4.-Regulation">Part 4. Regulation<a class="anchor-link" href="#Part-4.-Regulation">&#182;</a></h4><ul>
+<li><strong>transcript gene or not</strong></li>
+<li><strong>how many mRNA</strong> to produce from one gene</li>
+</ul>
+<blockquote><p><img  src="images/dna_l1g5.png" width=800/></p>
+<ul>
+<li>ofter low rate without additional factors (gene regulatory proteins)</li>
+<li>activators and repressors influence transcription rate</li>
+</ul>
+<p>cis-regulatory elements:</p>
+<ul>
+<li>sequences in the DNA that <strong>control initiation and efficiency</strong> of transcription</li>
+<li>serve as <strong>high affinity binding sites</strong> for regulatory proteins called <strong>transcription factors</strong></li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Lecture-2.-Biological-Membranes">Lecture 2. Biological Membranes<a class="anchor-link" href="#Lecture-2.-Biological-Membranes">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl2p1'></a></p>
+<h4 id="Part-1.-Structure">Part 1. Structure<a class="anchor-link" href="#Part-1.-Structure">&#182;</a></h4><blockquote><p>Functions of membrane</p>
+<ul>
+<li><strong>plasma</strong> membrane <strong>defines the inside</strong> and the outside of a cell</li>
+<li><strong>internal</strong> membranes form the <strong>boundaries of organelles</strong></li>
+<li><strong>prevent</strong> molecules generated inside the cell from <strong>leaking out</strong></li>
+<li><strong>prevent</strong> unwanted molecules from <strong>diffusing in</strong></li>
+<li>contain transport systems, serve as <strong>transport</strong> system (vesicles)</li>
+<li>accomplish <strong>energy and compound storage</strong></li>
+<li>perform <strong>information transduction</strong></li>
+<li>mediate <strong>cell-cell contact</strong></li>
+</ul>
+</blockquote>
+<p>Cellular membranes are asymmetric</p>
+<blockquote><p>Loss of asymmetry functions as apoptotic signal</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">insert_video</span><span class="p">(</span><span class="s2">&quot;h7x6Ojc_6iI&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[18]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="600"
+            height="400"
+            src="https://www.youtube.com/embed/h7x6Ojc_6iI"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl2p2'></a></p>
+<h4 id="Part-2.-Membrane-proteins">Part 2. Membrane proteins<a class="anchor-link" href="#Part-2.-Membrane-proteins">&#182;</a></h4><ul>
+<li>helix transmembrane domain (mostly non-polar)</li>
+<li>membrane anchors (<strong>hydrophobic groups</strong> that are covalently <strong>attached to proteins</strong>)</li>
+</ul>
+<p>Lipid Rafts</p>
+<blockquote><p>Summary</p>
+<ul>
+<li>Membranes control the energy, information and
+compound flow into and out of the cell and its
+compartments</li>
+<li>Membranes are asymmetric „2 dimensional liquids“</li>
+<li>Membranes contain specialized compartments lipid
+rafts<ul>
+<li>Anchor points for cytoskeleton</li>
+<li>Preformed organized areas for signal transduction
+and cell cell contacts</li>
+</ul>
+</li>
+<li>Integral and peripheral membrane proteins perform
+most of the tasks and help membrane organization</li>
+<li>Proteins may span the membrane to allow small
+charged molecules to cross the membrane</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl2p3'></a></p>
+<h4 id="Part-3.-Traffic">Part 3. Traffic<a class="anchor-link" href="#Part-3.-Traffic">&#182;</a></h4><p>Protein sorting</p>
+<blockquote><p>Properties</p>
+<ul>
+<li><strong>Proteins</strong> are synthesized in the cytoplasm and <strong>need to be transported</strong>
+to different cellular compartments</li>
+<li>Proteins contain all the information for proper targeting in their AA
+sequence in form of <strong>signal sequences</strong></li>
+<li><strong>Signal sequences are recognized by other receptor proteins</strong> that
+mediate the interaction with the translocation maschinery</li>
+<li>Protein translocation is <strong>energy consuming</strong></li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">insert_video</span><span class="p">(</span><span class="s2">&quot;owdIv8M5wjA&quot;</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">18</span><span class="p">),</span><span class="n">end</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">53</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="600"
+            height="400"
+            src="https://www.youtube.com/embed/owdIv8M5wjA?start=558&end=893"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Synthesis of secretory proteins</p>
+<blockquote><p>Signal sequence of ER + SRP -&gt; ribosome goes to rough ER -&gt; SRP (and ribosome) binds to SRP receptor -&gt; SRP is free -&gt; ribosome moves to translocon and opened it -&gt; signal sequence is removed -&gt; production of protein <strong>into</strong> ER (hsc 70 prevent folding) -&gt;  after the whole protein is produced, it is folded. 
+<img  src="images/mem_l2g1.png" width=600/></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Protein Translocation through the nuclear pore</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">insert_video</span><span class="p">(</span><span class="s2">&quot;owdIv8M5wjA&quot;</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span><span class="n">end</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">18</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Summary</p>
+<ul>
+<li>The nuclear pore complex acts as a gated channel through which
+macromolecules are <strong>selectively</strong> transported in and out of the
+nucleus.</li>
+<li>Transport through the nuclear pore is <strong>active and directed</strong>.</li>
+<li>Proteins actively <strong>imported</strong> through nuclear pore complexes
+contain a <strong>nuclear-localization signal (NLS)</strong>. Shuttling proteins
+contain both a nuclear-export signal (NES) and NLS.</li>
+<li>The NLS <strong>never gets cleaved off</strong>.</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl3'></a></p>
+<h3 id="Lecture-3.-Proteins">Lecture 3. Proteins<a class="anchor-link" href="#Lecture-3.-Proteins">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl3p1'></a></p>
+<h4 id="Part-1.-Folding">Part 1. Folding<a class="anchor-link" href="#Part-1.-Folding">&#182;</a></h4><blockquote><p>Forces that establish a 3D-structure:</p>
+<ul>
+<li>ionic bond</li>
+<li>hydrogen bond </li>
+<li>wan-der-Waals attraction between atoms</li>
+</ul>
+<p>So we try to <strong>minimize</strong> the hydrophobic surface</p>
+<p>Structures</p>
+<ul>
+<li>Primary structure: <strong>amino acid sequence</strong></li>
+<li>Secondray structure: highly regular local <strong>sub-structures</strong> (α-helix; β-sheet)</li>
+<li>Tertiary structure: <strong>3-D structure of a
+single</strong>, protein molecule</li>
+<li>Quartery structure: 3-D structure of a
+<strong>complex of 3-D folded proteins</strong> together
+with auxiliary factors</li>
+</ul>
+<p>To prevent folding until the end of transduction (hsp70), or change folding (hsp60)
+<img  src="images/pro_l3g1.png" width=600/>
+incorrect folding can force other proteins fold incorrect (<strong>protein aggregates</strong>) this can cause diseases (AD, PD so on)</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl3p2'></a></p>
+<h4 id="Part-2.-Posttranslational-Modifications">Part 2. Posttranslational Modifications<a class="anchor-link" href="#Part-2.-Posttranslational-Modifications">&#182;</a></h4><blockquote><ul>
+<li><strong>Phosphorylation</strong> of Proteins at Serine, Threonine or Tyrosine Residues <ul>
+<li>Kinases <strong>add</strong> phospho- group  and phosphatases <strong>delete</strong> phospho- group</li>
+<li>can activate and inactivate protein</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Posttranslational Modifications in <strong>Rough ER</strong></p>
+<blockquote><p>Before reach destination:</p>
+<ul>
+<li>Formation of <strong>disulfide bonds</strong><ul>
+<li>Intramolecular and intermolecular disulfide bonds (Cys–S–S–Cys) help
+<strong>stabilize the structure</strong> of many proteins</li>
+<li>Disulfide bond formation can proceed spontaneously only when
+<strong>sufficient oxidant</strong> is present, in eukaryotic cells, disulfide bonds are
+<strong>formed in the lumen of the rough ER</strong> but <strong>not in the cytosol</strong>.</li>
+</ul>
+</li>
+<li><p><strong>Proper folding</strong> (proteins that accelerate refolding)</p>
+<ul>
+<li>Protein disulfide isomerase (PDI)</li>
+<li>The chaperone Hsc70</li>
+</ul>
+</li>
+<li><p>Assembly into <strong>multimeric proteins</strong>
+<img  src="images/pro_l3g2.png" width=400/></p>
+</li>
+<li><strong>Addition and processing of carbohydrates</strong> (glycosylation)<ul>
+<li>Assist in folding</li>
+<li>Stabilization of glycoproteins</li>
+<li>Cell-cell adhesion</li>
+<li>Targeting signal (Mannose 6-phosphate is the marker that directs many hydrolytic
+enzymes from the Golgi complex to lysosomes )</li>
+</ul>
+</li>
+<li>Specific proteolytic <strong>cleavages</strong></li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='gl3p3'></a></p>
+<h4 id="Part-3.-Protein-Degradation">Part 3. Protein Degradation<a class="anchor-link" href="#Part-3.-Protein-Degradation">&#182;</a></h4><blockquote><p>The cell degrades:</p>
+<ul>
+<li><strong>misfolded</strong> or denatured proteins</li>
+<li>normal proteins whose <strong>concentration</strong> must be decreased</li>
+<li><strong>foreign</strong> proteins taken up by the cell</li>
+</ul>
+<p>Life Span of Proteins</p>
+<ul>
+<li>sort (less than 3 minutes) e.g.  regulatory proteins</li>
+<li>long (age of an organism for some structural proteins) e.g. proteins in the lens of the eye</li>
+<li><strong>depends on amino acids in N-terminal</strong></li>
+</ul>
+<p>Lysosomes</p>
+<ul>
+<li>the acid hydrolases are <strong>hydrolytic enzymes</strong> that are active under acidic conditions</li>
+<li>the lumen is maintained at an <strong>acidic</strong> pH by an H+ ATPase in the membrane that pumps H+ into the lysosome</li>
+</ul>
+<p>Proteasome
+<img  src="images/pro_l3g3.png" width=600/></p>
+<p>During unfolded protein stress (UPS) cell produces hsc70, enzymes to help proteasome, and proteins that move proteasome to ER</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Block-2">Block 2<a class="anchor-link" href="#Block-2">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -12409,7 +13022,7 @@ GABA</strong> from the synaptic cleft $\rightarrow$ <strong>increased concentrat
 <ul>
 <li>Neurons are highly polorized.(axons + dendrites)</li>
 <li>Proteins, organelles, (mRNAs) has to travel from soma (where they are produced) to their <strong>specific</strong> locations</li>
-<li>Diffusion is slow -&gt; we need <strong>active</strong> transport</li>
+<li>Diffusion is slow $\rightarrow$ we need <strong>active</strong> transport</li>
 </ul>
 <p>Axonal <a href="http://medical-dictionary.thefreedictionary.com/arborization">arborization</a> - axons <strong>also</strong> has many branches, and can terminate in different places.</p>
 
@@ -12469,7 +13082,7 @@ their <strong>associated <a href="https://en.wikipedia.org/wiki/Microtubule-asso
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">insert_video</span><span class="p">(</span><span class="s1">&#39;9RUHJhskW00&#39;</span><span class="p">,(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">50</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">16</span><span class="p">))</span>
@@ -12483,7 +13096,7 @@ their <strong>associated <a href="https://en.wikipedia.org/wiki/Microtubule-asso
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
@@ -12513,8 +13126,8 @@ their <strong>associated <a href="https://en.wikipedia.org/wiki/Microtubule-asso
 <li>The released energy induces a conformational<strong> change in the motor head</strong>
 which is then <strong>translated into a movement</strong> along the microtubule.
 <img  src="images/l5g7.png" width=500/></li>
-<li>kinesins moves cargo <strong>towards the +end</strong> (soma -&gt; axon terminal or dendrites)</li>
-<li>dyneins moves cargo <strong>towards the –end</strong> (axon terminal -&gt; soma).
+<li>kinesins moves cargo <strong>towards the +end</strong> (soma $\rightarrow$ axon terminal or dendrites)</li>
+<li>dyneins moves cargo <strong>towards the –end</strong> (axon terminal $\rightarrow$ soma).
 <img  src="images/l5g6.png" width=400/></li>
 <li>KIF‘s make use of <strong>adaptor protein complexes</strong> for cargo <strong>recognition and binding</strong></li>
 <li>using different APC the same KIF can bing different substances </li>
@@ -12587,12 +13200,214 @@ expression and, at the same time, <strong>suppresses apoptosis</strong> (‘prog
 </blockquote>
 <p>Axonal transport &amp; neurodegenerative diseases</p>
 <blockquote><ul>
-<li>Motor neuron disorders (<a href="https://en.wikipedia.org/wiki/Amyotrophic_lateral_sclerosis">ALS</a>, motor neuropathy, <a href="https://en.wikipedia.org/wiki/Muscle_atrophy">muscular atrophy</a>) (reduced ATPase activity -&gt; reduced motor activity)</li>
+<li>Motor neuron disorders (<a href="https://en.wikipedia.org/wiki/Amyotrophic_lateral_sclerosis">ALS</a>, motor neuropathy, <a href="https://en.wikipedia.org/wiki/Muscle_atrophy">muscular atrophy</a>) (reduced ATPase activity $\rightarrow$ reduced motor activity)</li>
 <li>Alzheimer’s Disease (tangles = phosphorylated, aggregated tau-proteins (MAPs)) 
 <img  src="images/l5g10.png" width=300/></li>
 <li>Huntington’s Disease (motor-cargo-interaction)</li>
-<li>Parkinson’s Disease (mitochondrial damage -&gt; decreased ATP-supply in axons)</li>
+<li>Parkinson’s Disease (mitochondrial damage $\rightarrow$ decreased ATP-supply in axons)</li>
 </ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l6'></a></p>
+<h3 id="Lecture-6.-Neurotransmitters">Lecture 6. Neurotransmitters<a class="anchor-link" href="#Lecture-6.-Neurotransmitters">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l6p1'></a></p>
+<h4 id="Part-1.-Low-molecular-neurotransmitters-vs-Neuropeptides">Part 1. Low molecular neurotransmitters vs Neuropeptides<a class="anchor-link" href="#Part-1.-Low-molecular-neurotransmitters-vs-Neuropeptides">&#182;</a></h4><p>Neurotransmitters &amp; neuroactive substances</p>
+<blockquote><p>Low-molecular:</p>
+<ul>
+<li>amino acids: glutamate, GABA, glycine</li>
+<li>acetylcholin (motor endplate + central)</li>
+<li>biogenic amines: dopamine, nor-/adrenaline, serotonin, histamine</li>
+<li>others: ATP, adenosine, <strong>endocannabiniods</strong></li>
+<li>glio-transmitter: D-serine</li>
+</ul>
+<p>Neuropeptides (neuroactive peptides, &gt;100):</p>
+<ul>
+<li>substance P, vasopressin, opioids, releasing-factors (pituitary….) sizes / amino acid residues: 5 (leu-enkephalin) – 39 (β-endorphin)</li>
+</ul>
+<p>Gaseous neuroactive substances:</p>
+<ul>
+<li><strong>nitric oxide / NO</strong>, carbon monoxide / CO</li>
+</ul>
+</blockquote>
+<p>Low-molecular: Synthesis (1,2) $\rightarrow$ transport (3) $\rightarrow$ release (4,5)$\rightarrow$ (re)-uptake (6,7,8) $\rightarrow$ inactivation (9)</p>
+<blockquote><p><img  src="images/l6g1.png" width=600/></p>
+<ol>
+<li>Uptake and accumulation of precursor amino acids (X) into the neuron</li>
+<li>Precursor is sequentially metabolized (<strong>enzymes</strong> !!) to get the final transmitter molecule (Z)</li>
+<li>Transmitter is accumulated (ZZ) and pumped into the vesicles via vesicular transporters</li>
+</ol>
+<p>4-5. Release into the synaptic cleft and binding to pre- and/or postsynaptic receptors</p>
+<p>6-8. Diffusion or reuptake by transporters (exception: ACh is enzymatically degraded by AChE)</p>
+<p>9 Metabolic inactivation / re-synthesis</p>
+</blockquote>
+<p>Peptides: synthesis $\rightarrow$ transport $\rightarrow$ release $\rightarrow$ termination</p>
+<blockquote><ul>
+<li>Pre-cursor peptides are synthesized in the <strong>soma</strong> $\rightarrow$  packed in the Golgi-apparatus into secretory granules
+together with peptidases $\rightarrow$ granules transported to the
+terminal $\rightarrow$ the peptide pre-cursor is
+cleaved $\rightarrow$ <strong>active peptides in vesicles in axon terminal</strong></li>
+<li>released from dense core vesicles in a
+Ca++-dependent fashion</li>
+<li>dense core vesicles are typically released at <strong>high
+firing-frequencies</strong> or <strong>burst-firing pattern</strong></li>
+<li>neuropeptides are enzymatically <strong>inactivated</strong> by
+(rather unspecific) endopeptidases</li>
+<li>few released peptides are cleaved into more ‘active
+forms’ (angiotensin I angiotensin II and III)
+<img  src="images/l6g4.png" width=400/></li>
+</ul>
+</blockquote>
+<p>Methods of NT imaging</p>
+<blockquote><p>We look for some indicators of the NT:</p>
+<ul>
+<li>neurotransmitter itself (difficulty: size of molecules, not a problem for peptides)</li>
+<li>key converting enzymes (TH, DBH, GAD, ChAT) [Someone who will be NT in the future]</li>
+<li>vesicular NT-transporter (vGluT1-3, vGaT, …) [Someone who add NT to vesicles ]</li>
+</ul>
+<p>Then we look for presence of mRNA of these indicators using in situ hybridization:
+<img  src="images/l6g6.png" width=300/></p>
+<ul>
+<li>mRNAs coding for key converting enzymes</li>
+<li>mRNAs coding for neuropeptides</li>
+<li>mRNAs coding for vesicular transporters</li>
+</ul>
+</blockquote>
+<p>Pathways of synthesis</p>
+<blockquote><p><img  src="images/l6g2.png" width=600/></p>
+<p>These NT are connected, so we get one from other 
+<img  src="images/l6g3.png" width=600/></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l6p2'></a></p>
+<h4 id="Part-2.-Co-localization-of-Classical-Transmitters-&amp;-Neuropeptides">Part 2. Co-localization of Classical Transmitters &amp; Neuropeptides<a class="anchor-link" href="#Part-2.-Co-localization-of-Classical-Transmitters-&amp;-Neuropeptides">&#182;</a></h4><p>Dale’s principle of neurotransmitter release</p>
+<blockquote><p>Neurons release <strong>the same</strong> neurotransmitters <strong>from all of their axon terminals</strong>.</p>
+</blockquote>
+<p><img  src="images/l6g7.png" width=800/></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l6p3'></a></p>
+<h4 id="Part-3.-Retrograde-signaling">Part 3. Retrograde signaling<a class="anchor-link" href="#Part-3.-Retrograde-signaling">&#182;</a></h4><p>NO</p>
+<blockquote><ul>
+<li>Glu $\rightarrow$ NMDA $\rightarrow$ $Ca^{2+}$ release $\rightarrow$ active enzyme nitric oxide-synthase ($nNOS$) $\rightarrow$  NO is generated from <a href="https://en.wikipedia.org/wiki/Arginine">arginine</a> $\rightarrow$ NO diffuses freely to Glia and axon terminal  $\rightarrow$ NO activates an enzyme ($sGC$) $\rightarrow$  synthesizes the sec.mess. <strong>cGMP</strong> $\rightarrow$ cGMP-dependent target proteins (ion channels and protein kinase)
+<img  src="images/l6g8.png" width=500/></li>
+</ul>
+</blockquote>
+<p>Endocannabinoids (<a href="https://en.wikipedia.org/wiki/2-Arachidonoylglycerol">2-AG</a>, anandamide)</p>
+<blockquote><p>$Ca^{2+}$ or activated G-protein $\rightarrow$PLC (enzyme, cleave phospholipids )$\rightarrow$ <a href="https://en.wikipedia.org/wiki/Phosphatidylinositol_4,5-bisphosphate">PIP</a>$_2$ $\rightarrow$ <a href="https://en.wikipedia.org/wiki/Diglyceride">DAG</a> $\rightarrow$ production of 2-AG(highly <strong>lipophilic and membrane permeable</strong>) $\rightarrow$ released into the extracellular space $\rightarrow$ binds specifically to $CB_1$-receptors located on presynaptic terminals $\rightarrow$ activation of $G_{i/o}$-<a href="#g_i">protein</a> $\rightarrow$ <strong>inhibition of $Ca^{2+}$ receptors</strong> $\rightarrow$ less NT (<strong>negative feedback</strong>)
+ <img  src="images/l6g9.png" width=400/></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='l6p4'></a></p>
+<h4 id="Part-4.-Neurotransmitter-system">Part 4. Neurotransmitter system<a class="anchor-link" href="#Part-4.-Neurotransmitter-system">&#182;</a></h4><p>Principles</p>
+<blockquote><p><img  src="images/l6g10.png" width=200/></p>
+<ul>
+<li>often comprise a small set of well <strong>localized</strong> neurons (several thousands)</li>
+<li>many of them are found in <strong>lower brain areas</strong> / brain stem</li>
+<li>each neuron can influence many others through <strong>widespread axonal arbors</strong><ul>
+<li><strong>modulate large assemblies of neurons</strong> (cortex, thalamus, spinal cord)</li>
+</ul>
+</li>
+<li>axon terminals <strong>often</strong> release transmitter <strong>into extracellular space</strong> (hormone-like communication) (without cleft)</li>
+<li>these neurotransmitter systems often have general ‘regulatory’ functions (see cartoon …)</li>
+<li>change general physiological features, such as ‘excitability’, more or less ‘synchronously active’</li>
+</ul>
+</blockquote>
+<p>The noradrenergic system (<a href="https://en.wikipedia.org/wiki/Stress_(biology)#Locus_coeruleus">LC</a>, Brainstem noradrenergic cells)</p>
+<blockquote><p><img  src="images/l6g11.png" width=600/>
+LC</p>
+<ul>
+<li>projects to just about <strong>every part of the brain</strong> !</li>
+<li>involved in regulating <strong>arousal</strong>, attention, sleep-wake cycle, anxiety, mood, …</li>
+<li>LC is activated by ‘new, <strong>unexpected</strong>’ stimuli</li>
+<li>LC increases the brains ‘responsiveness’, ‘<strong>alertness</strong>’</li>
+</ul>
+<p>Brainstem noradrenergic cells</p>
+<ul>
+<li>projects to autonomic cell groups, hypothalamus</li>
+<li>regulates <strong>autonomic</strong> / respiratory</li>
+</ul>
+</blockquote>
+<p>The dopaminergic system (<a href="https://en.wikipedia.org/wiki/Substantia_nigra">SN</a>, <a href="https://en.wikipedia.org/wiki/Ventral_tegmental_area">VTA</a>)</p>
+<blockquote><p><img  src="images/l6g12.png" width=600/>
+SN</p>
+<ul>
+<li>projects to <strong>basal ganglia</strong></li>
+<li>involved in regulating <strong>motor functions</strong></li>
+<li>facilitates the initiation of voluntary movements (Parkinson’s disease)</li>
+</ul>
+<p>VTA</p>
+<ul>
+<li>projects to frontal cortex, limbic system</li>
+<li>crucial part of the brain’s <strong>reward system</strong></li>
+<li>reinforcement of adaptive behaviors</li>
+</ul>
+</blockquote>
+<p>The serotonergic system(<a href="https://en.wikipedia.org/wiki/Raphe_nuclei">Raphe nuclei</a>)</p>
+<blockquote><p><img  src="images/l6g13.png" width=600/>
+Rostral raphe nuclei</p>
+<ul>
+<li>projects to various forebrain areas, particularly <strong>cortex</strong></li>
+<li>with LC-projections, part of the ‘ascending reticular activating system’</li>
+<li><strong>arousal</strong> of the brain, <strong>sleep-wake cycle</strong> as well as different <strong>stages of sleep</strong></li>
+<li>regulation of <strong>mood</strong>, emotional behaviors (affective disorders)</li>
+</ul>
+<p>Caudal raphe nuclei</p>
+<ul>
+<li>projects to spinal cord</li>
+<li>modulation of <strong>pain-related</strong> sensory signals</li>
+</ul>
+</blockquote>
+<p>The cholinergic system (<a href="https://en.wikipedia.org/wiki/Basal_forebrain">BF</a>)</p>
+<blockquote><p><img  src="images/l6g14.png" width=600/>
+Basal forebrain projections (BF):</p>
+<ol>
+<li>medial septal nuclei $\rightarrow$ hippocampus</li>
+<li>basal nucleus of Meynert $\rightarrow$ cortex<ul>
+<li>cognitive functions – <strong>learning &amp; memory</strong></li>
+<li>cells degenerate in Alzheimer’s patients</li>
+<li><strong>arousal, sleep-wake-cycle</strong></li>
+</ul>
+</li>
+</ol>
 </blockquote>
 
 </div>
@@ -12709,6 +13524,28 @@ transport?</li>
 <li>What are typical cargoes of the dendritic transport?</li>
 <li>How do molecular motors recognize / bind their specific cargo?</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Neurotransmitters-(NTs),-peptides-and-neuroactive-substances">Neurotransmitters (NTs), peptides and neuroactive substances<a class="anchor-link" href="#Neurotransmitters-(NTs),-peptides-and-neuroactive-substances">&#182;</a></h4><p>• Give a few examples of classical NTs, neuropeptides and other
+neuroactive substances.
+• Do NTs/peptides always act on both, ionotropic and metabotropic
+receptors? Give an example …
+• What is meant with ‘co-localization’ of transmitters – which forms of
+co-localization do you know?
+• Describe one ‘retrograde’ signaling system (NO-/nitric oxid-or
+endocannabinoid-system).
+• Which methods can be applied to demonstrate NTs/peptides in
+neuronal tissue? What is the major difference between the two
+methods discussed in lecture?
+• What is meant with ‘diffuse modulatory neurotransmitter systems’ ?
+Give one example (NT – localization – function)</p>
 
 </div>
 </div>
